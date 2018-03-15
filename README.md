@@ -1,6 +1,6 @@
 # binaryTree
 
-##Percursos Pré, Em e Pós Ordem
+## Percursos Pré, Em e Pós Ordem
 
 Pré-ordem: Você deve visitar primeiro a raiz, depois a sub-árvore <br> 
 esquerda e por último a sub-árvore direita.
@@ -11,7 +11,7 @@ depois a raiz e por último a sub-árvore direita.
 Pós-ordem: Você deve visitar primeiro a sub-árvore esquerda, <br>
  depois a sub-árvore direita e por último a raiz. 
  
-##Resultado
+## Resultado
 Pre-ordem <br>
 10 5 1 2 7 20 33 30 <br>  
 Em-ordem <br>
