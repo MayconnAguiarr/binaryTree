@@ -38,6 +38,14 @@ public class Teste {
 
 		System.out.println("Pos-ordem");
 		No.imprimirPosOrdem(arvore);
-		System.out.println(" ");				
+		System.out.println(" ");		
+		System.out.println();
+		
+		System.out.println("Nó 30 existe?");
+		System.out.println(No.buscaNo(arvore, 30));
+		
+		System.out.println("Nó 45 não existente?");
+		System.out.println(No.buscaNo(arvore, 45));
+
 	}
 }

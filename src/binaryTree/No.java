@@ -32,9 +32,24 @@ public class No {
 		}
 	}
 
+	public static boolean buscaNo(No arvore, int valor) {
+		boolean retorno = false;
+
+		if (arvore == null) {
+			retorno = false;
+		} else if (arvore.valor == valor) {
+			retorno = true;
+		} else if (valor < arvore.valor) {
+			retorno = buscaNo(arvore.esquerda, valor);
+		} else {
+			retorno = buscaNo(arvore.direita, valor);
+		}
+		return retorno;
+	}
+
 	public static void imprimirPreOrdem(No n) {
 		System.out.print(n.valor + " ");
-		
+
 		if (n.esquerda != null) {
 			imprimirPreOrdem(n.esquerda);
 		}
@@ -65,7 +80,6 @@ public class No {
 		}
 
 		System.out.print(n.valor + " ");
-
 	}
 
 }
